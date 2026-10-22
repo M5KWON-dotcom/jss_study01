@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 연습문제</title>
+</head>
+<body>
+    <textarea rows="5" cols="50" id="intro" placeholder="50자 이내만 입력가능"></textarea>
+    <button onclick="introCheck()">글자수 확인</button>
+
+    <script>
+        function introCheck(){
+            const textarea = document.getElementById("intro").value;
+            if(textarea.length > 50){
+                alert("50자 이내로 입력해주세요.");
+            }
+        }
+    </script>
+</body>
+</html>
